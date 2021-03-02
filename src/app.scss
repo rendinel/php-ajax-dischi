@@ -1,4 +1,4 @@
-// @import "colors";
+@import "colors";
 // @import "variable";
 
 *{
@@ -13,7 +13,7 @@
 }
 
 .wrapper{
-  background-color: #1E2D3B;
+  background-color: $color-blu;
   width: 100vw;
   height: 100vh;
 }
@@ -22,13 +22,13 @@
   width: 1200px;
   height: 100vh;
   margin: 0 auto;
-  background-color: #191919;
+  background-color: $color-greytwo;
 }
 
 header{
   width: 100%;
   height: 50px;
-  background-color: black;
+  background-color: $color-black;
   & > .hcontainer{
     width: 598px;
     height: 50px;
@@ -50,21 +50,21 @@ header{
   flex-wrap: wrap;
   & > .content{
     width: 150px;
-    background-color: black;
+    background-color: $color-black;
     margin-top: 25px;
     & > img{
-      margin: 0 25px 0 25px;
+      margin: 25px 25px 0 25px;
       width: 100px;
       height: 100px;
     }
     & > .title{
-      color:#fff;
+      color:$color-white;
     }
     & > .artist{
-      color:#4F4F4F;
+      color:$color-grey;
     }
     & > .year{
-      color:#fff;
+      color:$color-white;
     }
   }
 }
