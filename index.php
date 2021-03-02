@@ -1,37 +1,37 @@
 <?php
  $album = [
    [
-    'cover' => "img/cover.gif",
+    'cover' => "img/metallifting.jpg",
     'title' => "Motorhead",
     'artist' => "Motorhead",
     'year' => "1988"
    ],
    [
-    'cover' => "img/cover.gif",
+    'cover' => "img/metallifting.jpg",
     'title' => "Motorizer",
     'artist' => "Motorhead",
     'year' => "2010"
    ],
    [
-    'cover' => "img/cover.gif",
+    'cover' => "img/metallifting.jpg",
     'title' => "Bad magic",
     'artist' => "Motorhead",
     'year' => "2015"
    ],
    [
-    'cover' => "img/cover.gif",
+    'cover' => "img/metallifting.jpg",
     'title' => "Bomber",
     'artist' => "Motorhead",
     'year' => "1979"
    ],
    [
-    'cover' => "img/cover.gif",
+    'cover' => "img/metallifting.jpg",
     'title' => "Overkill",
     'artist' => "Motorhead",
     'year' => "1979"
    ],
    [
-    'cover' => "img/cover.gif",
+    'cover' => "img/metallifting.jpg",
     'title' => "Inferno",
     'artist' => "Motorhead",
     'year' => "2004"
@@ -51,15 +51,25 @@
   </head>
   <body>
 
-    <div class="container">
-        <?php foreach($album as $item) { ?>
-          <div class="content">
-            <img class="tx" src="<?php echo $item["cover"] ?> " alt="">
-            <h2 class="tx"> <?php echo $item["title"] ?> </h2>
-            <p class="tx"> <?php echo $item["artist"] ?> </p>
-            <p class="tx"> <?php echo $item["year"] ?> </p>
+    <div class="wrapper">
+      <div class="appcontainer">
+        <header>
+          <div class="hcontainer">
+            <img src="img/spot.png" alt="">
           </div>
-        <?php } ?>
+        </header>
+        <div class="container">
+            <?php foreach($album as $item) { ?>
+              <div class="content">
+                <img class="tx" src="<?php echo $item["cover"] ?> " alt="">
+                <h2 class="title tx"> <?php echo $item["title"] ?> </h2>
+                <p class="artist tx"> <?php echo $item["artist"] ?> </p>
+                <p class="year tx"> <?php echo $item["year"] ?> </p>
+              </div>
+            <?php } ?>
+        </div>
+      </div>
     </div>
+
   </body>
 </html>
