@@ -1,7 +1,7 @@
 new Vue({
   el:'#root',
   data: {
-    listAlbum:[],
+    listAlbum:[]
   },
   mounted() {
     const self = this;
@@ -10,8 +10,5 @@ new Vue({
       self.listAlbum = response.data;
     });
   },
-  methods:{
-
-  }
-});
+})
 Vue.config.devtools = true
