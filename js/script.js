@@ -5,7 +5,7 @@ new Vue({
   },
   mounted() {
     const self = this;
-    axios.get("localhost/php-ajax-dischi/app/server.php")
+    axios.get("http://localhost/php-ajax-dischi/app/server.php")
     .then(function(response) {
       self.listAlbum = response.data;
     });
